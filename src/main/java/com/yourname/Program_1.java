@@ -13,17 +13,16 @@ public class Program_1 {
             ar[i] = k;
         }
         int max = ar[0];
+        int min = ar[0];
         for (int f = 0; f < ar.length; f++) {
             if (ar[f] > max) {
                 max = ar[f];
             }
-        }
-        int min = ar[0];
-        for (int n = 0; n < ar.length; n++) {
-            if (ar[n] < min) {
-                min = ar[n];
+            if (ar[f] < min) {
+                min = ar[f];
             }
         }
+
         System.out.println("Самым большим елементом является " + max);
         System.out.println("Самым маленьким елементом является " + min);
     }
